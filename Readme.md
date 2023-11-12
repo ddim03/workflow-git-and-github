@@ -7,7 +7,7 @@ Penjelasan tentang alur kerja saat proses development aplikasi
 - Buat branch baru sesuai tugas yang di assign
 - Pindah ke branch yang baru saja dibuat 
 - Jika sudah selesai mengerjakan silahkan di commit (disimpan)
-- Lalu push (upload) kode ke github sesuai branch
+- Lalu push (upload) kode ke github
 - Lakukan pull request di github
 
 ## Git Commands 
@@ -27,7 +27,7 @@ Memindah perubahan ke staging area
 
 Commit / simpan hasil kerja 
 ```bash
-  git commit -m "<pesan commit>"
+  git commit -m "pesan commit"
  ```
 
 Push / upload hasil kerja ke github
@@ -35,10 +35,16 @@ Push / upload hasil kerja ke github
   git push -u origin <nama-branch>
  ```
 ## Konvensi penamaan branch
-Branch untuk fitur baru,  jika lebih dari 1 kata pisahkan dengan tanda (-)
+Branch untuk fitur baru
 ```bash
-  feat/<nama feature>
+  feat/<nama-feature>
   contoh : git branch feat/home || git branch <feat/autentikasi-user>
+```
+
+Branch untuk memperbaiki bug
+```bash
+  fix/<nama-feature>
+  contoh : git branch fix/home || git branch <fix/autentikasi-user>
 ```
 
 ## Konvensi pesan commit
@@ -47,5 +53,3 @@ Contoh pesan commit
   (<nama branch>): pesan commit
   contoh : git commit -m "(feat/home):menambah input search pengumuman"
 ```
-
-
