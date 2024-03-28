@@ -5,8 +5,9 @@ Penjelasan tentang alur kerja saat proses development aplikasi
 
 - Clone project sesuai arahan di github
 - Buat branch baru sesuai tugas yang di assign
-- Pindah ke branch yang baru saja dibuat 
-- Jika sudah selesai mengerjakan silahkan di commit (disimpan)
+- Pindah ke branch yang baru saja dibuat
+- Kerjakan jobdesk (coding)
+- Jika sudah selesai silahkan di commit (disimpan)
 - Lalu push (upload) kode ke github
 - Lakukan pull request di github
 
@@ -47,9 +48,15 @@ Branch untuk memperbaiki bug
   contoh : git branch fix/home || git branch <fix/autentikasi-user>
 ```
 
+Branch untuk merefactor kode
+```bash
+  refactor/<nama-feature>
+  contoh : git branch refactor/home || git branch <refactor/autentikasi-user>
+```
+
 ## Konvensi pesan commit
 Contoh pesan commit
 ```bash
-  (<nama branch>): pesan commit
-  contoh : git commit -m "(feat/home):menambah input search pengumuman"
+  tipe(detail): pesan commit
+  contoh : git commit -m "feat(home): menambah input search pengumuman"
 ```
